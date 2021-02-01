@@ -3,21 +3,24 @@
 
 <html>
  <head>
-  <title>Automata Policy</title>
+  <title>Blacklist Policy</title>
   <script src="api.js"></script>
   <script src="enforce.js"></script>
   <script src="index.js"></script>
  </head>
  <body>
 
+  <label>Message: </label>
   <input id="msginput" placeholder="Type a message here"></input><br />
 
-  <button id="reset" onclick="handlereset();">reset</button>
+  <label>To: </label>
+  <input id="toinput" placeholder="Mark"></input><br />
+
   <button id="send" onclick="handlesend();">send SMS message</button><br />
 
   <h3>Messages</h3>
   <table id="message-table">
-   <tr><th>Time</th><th>Message Content</th></tr>
+   <tr><th>Time</th><th>To</th><th>Content</th></tr>
   </table>
 
  </body>
