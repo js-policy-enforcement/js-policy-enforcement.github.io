@@ -1,3 +1,7 @@
+/*
+ * Enforces a policy described by a finite state automaton
+ */
+
 function handlereset () {
     alert("Reset button pressed");
 }
@@ -32,12 +36,13 @@ function handlereset () {
             };
 
         };
-        
+
         for (binding of transitionbindings) {
             intercept(binding.object, binding.method, getMonitorFunction(binding.transition));
         }
     }
 
+    // The finite state automaton described as a JS object.
     var reduceResetAutomata = {
         "initialstate": "5",
         "transitions": {
@@ -50,6 +55,7 @@ function handlereset () {
         }
     };
 
+    // specifies which API methods correspond to which transitions in the FSA.
     var transitionbindings = [
         {"object": api, "method": "sendSMS", "transition": "reduce"},
         {"object": window, "method": "handlereset", "transition": "reset"}
