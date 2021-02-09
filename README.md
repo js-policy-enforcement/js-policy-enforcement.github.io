@@ -1,5 +1,13 @@
 # Sample Websites
 
+Links to each deployed sample website:
+ * [Automata](https://js-policy-enforcement.github.io/automata/index.html)
+ * [Blacklist](https://js-policy-enforcement.github.io/blacklist/index.html)
+ * [Censoring](https://js-policy-enforcement.github.io/censoring/index.html)
+ * [Limit-Reset](https://js-policy-enforcement.github.io/limitreset/index.html)
+ * [No-Send-After-Read](https://js-policy-enforcement.github.io/nosendafterread/index.html)
+ * [Time Restriction](https://js-policy-enforcement.github.io/timerestriction/index.html)
+
 Each directory contains a sample website for testing the enforcement of different policies. The policy enforcement mechanism mimics the inline-reference monitor technique used by HybridGuard and MyWebGuard.
 
 Each sample website in this directory contains the following files:
