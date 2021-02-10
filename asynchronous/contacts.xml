@@ -1,0 +1,22 @@
+<contacts>
+ <person name="Alice">
+  <phone>111-1234</phone>
+  <email>alice12@email.com</email>
+ </person>
+ <person name="Bob">
+  <phone>222-1234</phone>
+  <email>bob23@email.com</email>
+ </person>
+ <person name="Carly">
+  <phone>333-1234</phone>
+  <email>carly34@email.com</email>
+ </person>
+ <person name="Daniel">
+  <phone>444-1234</phone>
+  <email>daniel45@email.com</email>
+ </person>
+ <person name="Evan">
+  <phone>555-1234</phone>
+  <email>evan56@email.com</email>
+ </person>
+</contacts>

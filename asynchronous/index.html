@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+ <head>
+  <title>Moderating AJAX</title>
+  <script src="api.js"></script>
+  <script src="enforce.js"></script>
+  <script src="index.js"></script>
+ </head>
+ <body>
+
+  <a href="https://js-policy-enforcement.github.io/index.html">Main Website</a>
+  <a href="https://github.com/js-policy-enforcement/js-policy-enforcement.github.io">Github Repository</a>
+  <hr>
+
+  <h1>Monitoring Asynchronous Callbacks</h1>
+
+  <input id="lookup-input" placeholder="Bob"></input>
+  <button id="lookup" onclick="handleLookupAsync();">Lookup Contact</button>
+  <label id="lookup-result"></label><br />
+
+  <input id="sendto-input" placeholder="333-1234"></input>
+  <input id="msginput" placeholder="Type a message here"></input>
+  <button id="send" onclick="handlesend();">send SMS message</button><br />
+
+  <h3>Messages</h3>
+  <table id="message-table">
+   <tr><th>Time</th><th>Sent-to</th><th>Content</th></tr>
+  </table>
+
+ </body>
+</html>

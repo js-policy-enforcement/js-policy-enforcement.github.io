@@ -7,6 +7,7 @@ Links to each deployed sample website:
  * [Limit-Reset](https://js-policy-enforcement.github.io/limitreset/index.html)
  * [No-Send-After-Read](https://js-policy-enforcement.github.io/nosendafterread/index.html)
  * [Time Restriction](https://js-policy-enforcement.github.io/timerestriction/index.html)
+ * [Asynchronous Callback](https://js-policy-enforcement.github.io/asynchronous/index.html)
 
 Each directory contains a sample website for testing the enforcement of different policies. The policy enforcement mechanism mimics the inline-reference monitor technique used by HybridGuard and MyWebGuard.
 
