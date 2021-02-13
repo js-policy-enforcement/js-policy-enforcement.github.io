@@ -1,21 +1,30 @@
 # Sample Websites
 
-Links to each deployed sample website:
- * [Automata](https://js-policy-enforcement.github.io/automata/index.html)
- * [Blacklist](https://js-policy-enforcement.github.io/blacklist/index.html)
- * [Censoring](https://js-policy-enforcement.github.io/censoring/index.html)
- * [Limit-Reset](https://js-policy-enforcement.github.io/limitreset/index.html)
- * [No-Send-After-Read](https://js-policy-enforcement.github.io/nosendafterread/index.html)
- * [Time Restriction](https://js-policy-enforcement.github.io/timerestriction/index.html)
- * [Asynchronous Callback](https://js-policy-enforcement.github.io/asynchronous/index.html)
- * [AJAX](https://js-policy-enforcement.github.io/ajaxmonitoring/index.html)
+Each directory contains a sample website for testing the enforcement of
+different policies. The policy enforcement mechanism mimics the inline-reference
+monitor technique used by HybridGuard and MyWebGuard. The sample websites can
+be grouped into two categories:
+ 1. _Policy Demonstrations_ explore how expressive and formal the policies
+    themselves can be. Polices are defined in terms of vague API functions
+    in `api.js`.
+    * [Automata](https://js-policy-enforcement.github.io/automata/index.html)
+    * [Blacklist](https://js-policy-enforcement.github.io/blacklist/index.html)
+    * [Censoring](https://js-policy-enforcement.github.io/censoring/index.html)
+    * [Limit-Reset](https://js-policy-enforcement.github.io/limitreset/index.html)
+    * [No-Send-After-Read](https://js-policy-enforcement.github.io/nosendafterread/index.html)
+    * [Time Restriction](https://js-policy-enforcement.github.io/timerestriction/index.html)
+ 2. _Enforcement Demonstrations_ explore how much control the inlining
+    enforcement mechanism can exert over real-world APIs such as AJAX or the
+    `fetch` function. The enforcement mechanism is only used to implement a very
+    simple policy.
+    * [Asynchronous Callback](https://js-policy-enforcement.github.io/asynchronous/index.html)
+    * [AJAX](https://js-policy-enforcement.github.io/ajaxmonitoring/index.html)
+    * [Promises and Fetch](https://js-policy-enforcement.github.io/promises/index.html)
 
-Each directory contains a sample website for testing the enforcement of different policies. The policy enforcement mechanism mimics the inline-reference monitor technique used by HybridGuard and MyWebGuard.
 
 Each sample website in this directory contains the following files:
  * `index.html` the entry point for the website
  * `index.js` contains untrusted code that invokes API methods
- * `api.js` represents the protected API functions
  * `enforce.js` the enforcement mechanism
 
 Since output can come from the untrusted code, the API, or the enforcement mechanism, these examples were constructed under these general rules:
