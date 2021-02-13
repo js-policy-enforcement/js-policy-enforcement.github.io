@@ -8,10 +8,11 @@
  * [No-Send-After-Read](nosendafterread/index.html)
  * [Time Restriction](timerestriction/index.html)
  * [Asynchronous Callback](asynchronous/index.html)
+ * [AJAX](ajaxmonitoring/index.html)
 
 ## Description
 
-Each sample website contains the following files:
+Each sample website may contains the following files:
  * `index.html` the entry point for the website
  * `index.js` contains untrusted code that invokes API methods
  * `api.js` represents the protected API functions

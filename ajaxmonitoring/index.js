@@ -11,7 +11,7 @@ function ajaxRequest (whichfile) {
 
   var request = new XMLHttpRequest();
   request.onreadystatechange = function () {
-    if (request.readyState !== 4) {console.log("In onreadystatechange: " + request.readyState); return;}
+    if (request.readyState !== 4) return;
 
     if (request.status === 200) {
       reslabel.innerHTML = request.responseText;
