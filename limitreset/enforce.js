@@ -26,6 +26,11 @@
         limit -= 1;
         console.log("MONITOR: allowing call. " + limit + " calls left.");
         return func.apply(obj, args);
-    };
+    });
+
+    intercept(api, "reset", function (obj, func, args) {
+        limit = 5;
+        console.log("MONITOR: reseting limit to 5");
+    });
 
 })();

@@ -9,5 +9,9 @@ var api = {
 
         if (table.rows.length >= 11)
             table.deleteRow(11);
+    },
+
+    api: function () {
+        alert("Reset API function called");
     }
 };
