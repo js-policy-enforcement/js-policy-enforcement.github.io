@@ -1,0 +1,24 @@
+/-- The NuSMV model for the no-send-after-read enforcement code.
+ -- Run `NuSMV model.smv` for verification.
+ -- Run `NuSMV -int model.smv` for interactive simulation.
+ --/
+
+MODULE nosendafterread
+  VAR
+    lastFuncCall : {send, read};
+    lastEvent    : {send, read};
+    canSendSMS   : boolean;
+  ASSIGN
+    init(lastEvent)    := send;
+    init(canSendSMS)   := TRUE;
+  TRANS
+    case next(lastFuncCall) = send :
+           (next(canSendSMS) = canSendSMS) &
+           (!canSendSMS -> (next(lastEvent) = lastEvent)) &
+           (canSendSMS -> (next(lastEvent) = send));
+         next(lastFuncCall) = read :
+           (next(canSendSMS) = FALSE) &
+           (next(lastEvent) = read);
+    esac;
+  SPEC
+    AG (lastEvent = read -> AG (lastEvent != send))
