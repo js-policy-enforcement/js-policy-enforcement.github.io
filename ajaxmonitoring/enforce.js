@@ -21,6 +21,19 @@
         };
     }
 
+    // This version stores the values locally.
+    // getMonitor(obj, prop, getv, setv) -> val
+    // setMonitor(obj, prop, val, getv, setv)
+    function interceptProperty (object, property, getMonitor, setMonitor) {
+        var original = object[property];
+        var getv = function () {return original;}
+        var setv = function (val) {original = val;}
+        Object.defineProperty(object, property, {
+            get: function () {return getMonitor(this, property, getv, setv);},
+            set: function (val) {setMonitor(this, property, val, getv, setv);}
+        });
+    }
+
     /*************** Policy Enforcement ****************/
 
     // stores the URL for each open XMLHttpRequest object since
