@@ -10,7 +10,7 @@ be grouped into two categories:
     * [Automata](https://js-policy-enforcement.github.io/automata/index.html)
     * [Blacklist](https://js-policy-enforcement.github.io/blacklist/index.html)
     * [Censoring](https://js-policy-enforcement.github.io/censoring/index.html)
-    * [Limit-Reset](https://js-policy-enforcement.github.io/limitreset/index.html)
+    * [Reduce-Reset](https://js-policy-enforcement.github.io/reducereset/index.html)
     * [No-Send-After-Read](https://js-policy-enforcement.github.io/nosendafterread/index.html)
     * [Time Restriction](https://js-policy-enforcement.github.io/timerestriction/index.html)
  2. _Enforcement Demonstrations_ explore how much control the inlining

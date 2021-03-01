@@ -4,7 +4,7 @@
  * [Automata](automata/index.html)
  * [Blacklist](blacklist/index.html)
  * [Censoring](censoring/index.html)
- * [Limit-Reset](limitreset/index.html)
+ * [Reduce-Reset](reducereset/index.html)
  * [No-Send-After-Read](nosendafterread/index.html)
  * [Time Restriction](timerestriction/index.html)
  * [Asynchronous Callback](asynchronous/index.html)
